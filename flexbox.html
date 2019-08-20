@@ -1,0 +1,52 @@
+<!-- father에게 명령한 규칙은 child times에 영향을 미친다! 
+    flex direction을 바꾸면 axis가 서로 스위치 됨
+    https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
+    - flex direction : row -> main(horizontal) / cross(vertical)
+    - flex direction : column -> main(vertial) /  cross(horizontal)
+    수평, 수직 다시 해보기!! -->
+    <!-- direction, cross/main axis, justify-content, align-items, flex-direction:reverse -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Flexbox</title>
+    <style>
+        .father {
+            /* flex 옵션을 주면 기본적으로 flex-direction : row  */
+            display: flex;
+            flex-direction: column;
+            /* main axis */
+            justify-content: center;
+            /* cross axis */
+            /* align-items: center; */
+            flex-wrap: wrap;
+            height: 100vh;
+        }
+        /* child도 flex container가 될 수 있음! 안의 text에게.. */
+        .child {
+            width: 200px;
+            height: 200px;
+            background-color: aqua;
+            border: 1px solid white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+            color: white;
+        }
+        /* align-self: child에게 직접 옵션을 줘서 움직이는 방법 */
+        .child:first-child{
+            align-self: flex-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="child">1</div>
+        <div class="child">2</div>
+        <div class="child">3</div>
+    </div>
+</body>
+</html>
