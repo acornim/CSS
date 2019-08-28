@@ -1,0 +1,71 @@
+<!-- grid templete area
+    new measurement : fr(fraction : 최대한 공간 많이 활용해라!) -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>grid templete area</title>
+    <style>
+        .father{
+            display: grid;
+            grid-auto-rows: 200px;
+            grid-gap:5px;
+            /* grid-template-areas: "header header header" "content content sidebar" "content content sidebar" 
+                                "footer footer footer"; */
+        /* grid-template-columns: 2fr 1fr 2fr 1fr; */
+            /* grid-template-columns: min-content repeat(3,1fr) ; */
+            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            /* auto-fit : 가능한 많이 채워넣어라! content를 strech해서 브라우져에 꽉 채우는 것
+            auto-fill : 최대한 모아서 많은 column넣을 수 있게! */
+        }
+        /* .first{
+            background-color: aquamarine;
+            grid-area:content;
+        }
+        
+        .second{
+            background-color: goldenrod;
+            grid-area: sidebar;
+        }
+        .third {
+            background-color: blueviolet;
+            grid-area: header;
+        }
+        .forth {
+            background-color: cornflowerblue;
+            grid-area: footer;
+        } */
+
+    .box:nth-child(odd)
+    {
+        background-color: cadetblue;
+    }
+    .box:nth-child(even){
+        background-color: yellowgreen;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="father">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+</html>

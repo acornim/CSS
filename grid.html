@@ -1,0 +1,38 @@
+<!-- flexbox로만 충분하지 않은 이유 ; flex는 table과 같은 역할을 해주지 못함 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>css grid</title>
+    <style>
+        .father{
+            display: grid;
+            grid-template-columns: 30px 50px;
+            grid-template-rows: 50px 12px;
+            grid-gap: 5px;
+            grid-auto-columns: 50px;
+            /* flex direction이랑 비슷한 속성! 기본은 row임 */
+            /* 니콜라스는 대부분 row만 씀! 웹은 아래로 내려가니까ㅎㅎ  */
+            grid-auto-flow: column;
+        }
+        .box{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <!-- .father>.box -->
+    <div class="father">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>
