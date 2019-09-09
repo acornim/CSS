@@ -10,15 +10,17 @@
     <style>
         .father{
             display: grid;
-            grid-auto-rows: 200px;
+            grid-auto-rows: 100px;
             grid-gap:5px;
             /* grid-template-areas: "header header header" "content content sidebar" "content content sidebar" 
                                 "footer footer footer"; */
         /* grid-template-columns: 2fr 1fr 2fr 1fr; */
             /* grid-template-columns: min-content repeat(3,1fr) ; */
-            grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+            /* grid-template-columns: repeat(auto-fit,minmax(200px,1fr)); */
             /* auto-fit : 가능한 많이 채워넣어라! content를 strech해서 브라우져에 꽉 채우는 것
             auto-fill : 최대한 모아서 많은 column넣을 수 있게! */
+
+            grid-template-columns: repeat(5,1fr);
         }
         /* .first{
             background-color: aquamarine;
@@ -37,7 +39,12 @@
             background-color: cornflowerblue;
             grid-area: footer;
         } */
-
+    .box {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: aliceblue;
+    }
     .box:nth-child(odd)
     {
         background-color: cadetblue;
@@ -45,11 +52,29 @@
     .box:nth-child(even){
         background-color: yellowgreen;
     }
+    .box:first-child {
+		/* grid-row: 1 / 5	; */
+        grid-area : 2 / 1 / span 2 / span 3;
+        /* Make "item1" start on row 2 column 1, and span 2 rows and 3 columns: */
+}
 
+/* box 안 첫번째 자식에게 1부터 5까지 가져가라고 명령하는 것입니다.  */
+/* span을 써서 더 편하게 사용할 수 있습니다. */
+
+        .box:first-child {
+		    grid-row: span 5	
+        }   
     </style>
 </head>
 <body>
     <div class="father">
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
         <div class="box"></div>
