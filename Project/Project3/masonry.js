@@ -1,4 +1,5 @@
-/* ref: https://medium.com/@andybarefoot/a-masonry-style-layout-using-css-grid-8c663d355ebb */
+/* ref: https://medium.com/@andybarefoot/a-masonry-style-layout-using-css-grid-8c663d355ebb
+https://css-tricks.com/piecing-together-approaches-for-a-css-masonry-layout/ */
 
 let grid;
 let allItems;
