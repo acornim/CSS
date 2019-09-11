@@ -14,8 +14,7 @@
   },
   "homepage": "https://github.com/acornim/CSS#readme",
   "scripts": {
-    "start": "parcel ./Project/Project2/index.html",
-    "build" : "parcel build ./Project/Project2/index.html"
+    "start": "parcel ./Project/Project3/index.html"
   },
   "devDependencies": {
     "parcel-bundler": "^1.12.3",
