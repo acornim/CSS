@@ -76,7 +76,7 @@ body{
     color: var(--grayColor);
     cursor: pointer;
 }
-.recipe__icon:hover .fa-heart:before{
+.recipe__icon:hover{
     color:rgb(246, 71, 71);
 }
 .recipe .receipe__info{
@@ -137,16 +137,17 @@ body{
     grid-template-columns: minmax(160px, 1fr);
     grid-auto-columns: minmax(160px, 1fr);
     grid-gap:20px;
+    
 }
 .recommended-grid .recommended-recipe{
     border-radius: var(--borderRadius);
     height: 18vh;
-    
+    margin-bottom: 20px;
     background-size: cover;
     background-position: cover cover;
     display: flex;
     align-items: flex-end;
-    overflow: hidden;
+    overflow: scroll;
     position: relative;
     box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.2);
     margin-bottom: 10px;
