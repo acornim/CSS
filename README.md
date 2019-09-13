@@ -49,5 +49,8 @@ CSS Masterclass course (Flexbox, Grid, PostCSS, CSSNext)
 - [x] Practice Grid
 </details>
 
-Project 2 : https://uc44w.csb.app
-Project 3 : <a href="https://386dp.csb.app/" target="_blank">Recipe App🥗</a>
+Project 2 : <a href="https://uc44w.csb.app" target="_blank">Meal App🍔</a> 
+<br>
+Project 3 : <a href="https://ji97u.csb.app" target="_blank">News App🗞</a> - updating masonry layout 
+<br>
+Project 4 : <a href="https://386dp.csb.app/" target="_blank">Recipe App🥗</a>
