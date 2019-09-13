@@ -50,3 +50,4 @@ CSS Masterclass course (Flexbox, Grid, PostCSS, CSSNext)
 </details>
 
 Project 2 : https://uc44w.csb.app
+Project 3 : <a href="https://386dp.csb.app/" target="_blank">Recipe App🥗</a>
